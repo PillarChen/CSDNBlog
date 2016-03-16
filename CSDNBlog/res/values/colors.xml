@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="btn_bg">#fffffd</color>
+    <color name="black">#000000</color>
+    <color name="banner_color">#25cafa</color>
+    <color name="line_color">#80c1c1c1</color>
+    <color name="btn_color">#50c1e9</color>
+    <color name="hint_color_1">#80000000</color>
+    <color name="hint_color">#50c1c1c1</color>
+    <color name="btn_color_pressed">#8050c1e9</color>
+    <color name="btn_text_color">#ffffff</color>
+    <color name="hint_color_version">#50000000</color>
+    <color name="red">#FF0000</color>
+    <color name="theme_color_banner">#159ceb</color>
+    <color name="dialog_ok_bg_btn_color">#25cafa</color>
+    <color name="dialog_cancle_bg_btn_color">#90c1c1c1</color>
+    <color name="accent_1">#ff29549f</color>
+    <color name="banner_text">#ffffff</color>
+    <color name="grey_bg">#95f2f2f2</color>
+    <color name="hint_textcolor_version">#50818181</color>
+    <color name="hint_textcolor">#8e8e8e</color>
+    <color name="line">#50B2B2B2</color>
+    <color name="hint_edittext">#80bdbdbd</color>
+    <color name="btn_bg_topright">#abe0ff</color>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/banner_userinfo" />
+
+    <EditText
+        android:id="@+id/contactView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_view"
+        android:gravity="left"
+        android:hint="请输入您的联系方式"
+        android:padding="10dp"
+        android:textColorHint="@color/hint_edittext" />
+
+    <EditText
+        android:id="@+id/feedbackContentView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_view"
+        android:gravity="left"
+        android:hint="请写出您的反馈"
+        android:padding="10dp"
+        android:textColorHint="@color/hint_edittext" />
+
+</LinearLayout>

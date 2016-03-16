@@ -1,0 +1,2 @@
+CSDNBlog为Eclipse环境下的项目，使用时引入library_tool中的第三方类库；
+CSDNBlog_AS为Android Studio环境下面的项目

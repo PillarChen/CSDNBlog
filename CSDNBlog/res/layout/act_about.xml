@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/banner_msg" />
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/versionNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/hint_textcolor_version" />
+
+    <View
+        style="@style/line"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        style="@style/acc_layout"
+        android:layout_height="@dimen/acc_layout_userinfo_height" >
+
+        <TextView
+            style="@style/user_info_left_text"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:text="作者"
+            android:textSize="15dp" />
+
+        <TextView
+            style="@style/user_info_left_text"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="Pillar"
+            android:textColor="@color/hint_textcolor" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/qqView"
+        style="@style/acc_layout"
+        android:layout_height="@dimen/acc_layout_userinfo_height" >
+
+        <TextView
+            style="@style/user_info_left_text"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:text="QQ"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/qqNumView"
+            style="@style/user_info_left_text"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="1225039202"
+            android:textColor="@color/hint_textcolor" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            style="@style/user_info_left_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="@string/about_txt"
+            android:textColor="@color/hint_textcolor" />
+    </ScrollView>
+
+</LinearLayout>
