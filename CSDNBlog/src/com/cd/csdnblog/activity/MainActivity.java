@@ -11,7 +11,7 @@ import cn.domob.android.ads.InterstitialAdListener;
 import cn.domob.android.ads.AdManager.ErrorCode;
 import com.cd.csdnblog.R;
 import com.cd.csdnblog.MyAPP;
-import com.cd.csdnblog.bean.Blog;
+import com.cd.csdnblog.bean.MyBlogBean;
 import com.cd.csdnblog.bean.Blog_Recommend;
 import com.cd.csdnblog.bean.MyUser;
 import com.cd.csdnblog.fragment.HomeFragment;
@@ -232,7 +232,7 @@ public class MainActivity extends FragmentActivity {
 			handler.sendEmptyMessage(0);
 			return;
 		}
-		final BmobQuery<Blog> bmobQuery= new BmobQuery<Blog>();
+		final BmobQuery<MyBlogBean> bmobQuery= new BmobQuery<MyBlogBean>();
 		bmobQuery.order("createdAt");
 		
 		bmobQuery.addWhereEqualTo("author", user);
@@ -245,10 +245,10 @@ public class MainActivity extends FragmentActivity {
 //				bmobQuery.setCachePolicy(CachePolicy.NETWORK_ELSE_CACHE);	// 如果没有缓存的话，则先从网络中取
 //			}
 //		}
-		bmobQuery.findObjects(mContext, new FindListener<Blog>() {
+		bmobQuery.findObjects(mContext, new FindListener<MyBlogBean>() {
 			
 			@Override
-			public void onSuccess(List<Blog> object) {
+			public void onSuccess(List<MyBlogBean> object) {
 				// TODO Auto-generated method stub
 //				MyAPP.toast(mContext.getApplicationContext(),"查询成功：共"+object.size()+"条数据。");
 				MyAPP.mMyBlogData=object;

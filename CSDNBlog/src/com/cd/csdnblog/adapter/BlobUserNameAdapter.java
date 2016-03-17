@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 import com.cd.csdnblog.R;
 import com.cd.csdnblog.activity.ManagerActivity;
-import com.cd.csdnblog.bean.Blog;
+import com.cd.csdnblog.bean.MyBlogBean;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,10 +14,10 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 public class BlobUserNameAdapter extends BaseAdapter {
-	private List<Blog> mData;
+	private List<MyBlogBean> mData;
 	private Context mContext;
 	
-	public BlobUserNameAdapter(List<Blog> mData, Context mContext) {
+	public BlobUserNameAdapter(List<MyBlogBean> mData, Context mContext) {
 		super();
 		this.mData = mData;
 		this.mContext = mContext;

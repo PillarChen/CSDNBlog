@@ -1,39 +1,67 @@
 package com.cd.csdnblog.bean;
 
-import cn.bmob.v3.BmobObject;
+public class Blog {
+	private String title;
+	private String content;
+	private String summary;
+	private String imgLink;
+	private String link;
+	private int state;
+	private String commentCount;
 
-/**
- * 我的博客
- * @author topsage
- *
- */
-public class Blog extends BmobObject{
-	private MyUser author;
-	private String blogUserName;
-	public Blog() {
-		super();
+	public String getTitle() {
+		return title;
 	}
-	public Blog(MyUser author, String blogUserName) {
-		super();
-		this.author = author;
-		this.blogUserName = blogUserName;
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	public MyUser getAuthor() {
-		return author;
+
+	public String getContent() {
+		return content;
 	}
-	public void setAuthor(MyUser author) {
-		this.author = author;
+
+	public void setContent(String content) {
+		this.content = content;
 	}
-	public String getBlogUserName() {
-		return blogUserName;
+
+	public String getSummary() {
+		return summary;
 	}
-	public void setBlogUserName(String blogUserName) {
-		this.blogUserName = blogUserName;
+
+	public void setSummary(String summary) {
+		this.summary = summary;
 	}
-	@Override
-	public String toString() {
-		return "Blog [author=" + author + ", blogUserName=" + blogUserName
-				+ "]";
+
+	public String getImgLink() {
+		return imgLink;
 	}
-	
+
+	public void setImgLink(String imgLink) {
+		this.imgLink = imgLink;
+	}
+
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
+	}
+
+	public int getState() {
+		return state;
+	}
+
+	public void setState(int state) {
+		this.state = state;
+	}
+
+	public String getCommentCount() {
+		return commentCount;
+	}
+
+	public void setCommentCount(String commentCount) {
+		this.commentCount = commentCount;
+	}
 }

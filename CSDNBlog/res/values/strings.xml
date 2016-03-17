@@ -38,4 +38,7 @@
     <string name="source_init_str">----分类----</string>
     
     <string name="about_txt">CSDNBlog是针对CSDN博客开发的APP,可以自己定制添加CSDN博客到我的博客中......</string>
+    
+     <string name="hint_loading">加载中......</string>
+      <string name="hint_nomore">暂无更多</string>
 </resources>

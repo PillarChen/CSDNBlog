@@ -10,7 +10,7 @@ import com.cd.csdnblog.R;
 import com.cd.csdnblog.MyAPP;
 import com.cd.csdnblog.adapter.BlobUserNameAdapter;
 import com.cd.csdnblog.base.BaseActivity;
-import com.cd.csdnblog.bean.Blog;
+import com.cd.csdnblog.bean.MyBlogBean;
 import com.cd.csdnblog.bean.MyUser;
 import com.cd.csdnblog.utils.DialogTool;
 import com.cd.csdnblog.utils.SharePreferencesUtil;
@@ -181,7 +181,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 		if(user==null){
 			return;
 		}
-		final BmobQuery<Blog> bmobQuery= new BmobQuery<Blog>();
+		final BmobQuery<MyBlogBean> bmobQuery= new BmobQuery<MyBlogBean>();
 		bmobQuery.order("createdAt");
 		
 		bmobQuery.addWhereEqualTo("author", user);
@@ -194,10 +194,10 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 //				bmobQuery.setCachePolicy(CachePolicy.NETWORK_ELSE_CACHE);	// 如果没有缓存的话，则先从网络中取
 //			}
 //		}
-		bmobQuery.findObjects(mContext, new FindListener<Blog>() {
+		bmobQuery.findObjects(mContext, new FindListener<MyBlogBean>() {
 			
 			@Override
-			public void onSuccess(List<Blog> object) {
+			public void onSuccess(List<MyBlogBean> object) {
 				// TODO Auto-generated method stub
 //				MyAPP.toast(mContext.getApplicationContext(),"查询成功：共"+object.size()+"条数据。");
 				MyAPP.mMyBlogData=object;

@@ -2,7 +2,7 @@ package com.cd.csdnblog.adapter;
 
 import java.util.List;
 
-import com.cd.csdnblog.bean.Blog;
+import com.cd.csdnblog.bean.MyBlogBean;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -14,10 +14,10 @@ public class MyViewPagerAdapter extends FragmentPagerAdapter {
 
 	private List<Fragment> fragments;
 	private List<String> authorList;
-	List<Blog> mData;
+	List<MyBlogBean> mData;
 
 	public MyViewPagerAdapter(FragmentManager fm, List<Fragment> fragments,
-			List<Blog> mData) {
+			List<MyBlogBean> mData) {
 		super(fm);
 		this.fragments = fragments;
 		this.mData = mData;
