@@ -203,13 +203,13 @@ public class NoteListFragment extends BaseFragmentAttach implements OnItemClickL
 			return;
 		}
 		try {
-			String clickUrl="";
-			clickUrl=Url.BASEURL+Url.URL_BLOB+mData.get(position-1).getLink();
+//			String clickUrl="";
+//			clickUrl=Url.BASEURL+Url.URL_BLOB+adapter.getList().get(position).getLink();
 			Intent intent=new Intent(mActivity,DetailActivity.class);
-			intent.putExtra("href", clickUrl);
-			intent.putExtra("title", mData.get(position-1).getTitle());
+			intent.putExtra("href", adapter.getList().get(position).getLink());
+			intent.putExtra("title",adapter.getList().get(position).getTitle());
 			startActivity(intent);
-			Log.i("url", clickUrl);
+//			Log.i("url", clickUrl);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
