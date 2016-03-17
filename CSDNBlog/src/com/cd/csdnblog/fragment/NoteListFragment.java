@@ -105,6 +105,9 @@ public class NoteListFragment extends BaseFragmentAttach implements OnItemClickL
 
 			@Override
 			public void onRefresh() {
+//				swipeRl.setRefreshing(false);
+				page.setPage(1);
+				new MainTask().execute(Url.getBlogListURL(blogType, page.getCurrentPage(),url),"refresh");
 //				clickCancleSearchTool();
 //				if(!isSkipPage){
 //					MyListView.skipPageNum=0;
