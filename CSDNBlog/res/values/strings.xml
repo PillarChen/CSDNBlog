@@ -13,6 +13,7 @@
     <string name="rePassword">重复输入密码：</string>
     <string name="age">年龄：</string>
     <string name="login">登  录</string>
+    <string name="btn_pay">立即支付</string>
     <string name="register">注   册</string>
     <string name="reWrite_password">重置密码</string>
     <string name="setup_password_title">设置密码</string>
@@ -40,5 +41,7 @@
     <string name="about_txt">CSDNBlog是针对CSDN博客开发的APP,可以自己定制添加CSDN博客到我的博客中......</string>
     
      <string name="hint_loading">加载中......</string>
-      <string name="hint_nomore">暂无更多</string>
+     <string name="hint_nomore">暂无更多</string>
+     <string name="banner_txt_pay">土豪赞助</string>
+     <string name="hint_pay_info">注:收款方为第三方支付服务商，请土豪们放心赞助，有问题请联系：1225039202(开发者的客服联系方式)</string>
 </resources>

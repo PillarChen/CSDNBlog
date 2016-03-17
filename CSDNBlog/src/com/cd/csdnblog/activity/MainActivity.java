@@ -395,6 +395,10 @@ public class MainActivity extends FragmentActivity {
 
 			startActivity(new Intent(this, AboutActivity.class));
 			break;
+		case Pay:
+			
+			startActivity(new Intent(this, PayActivity.class));
+			break;
 		case Feedback:
 			startActivity(new Intent(this, FeedBackActivity.class));
 			break;

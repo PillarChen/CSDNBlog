@@ -9,6 +9,7 @@ public enum DrawerTag {
 	BlogManager, // 离线管理
 	ClearCache, // 清理缓存
 	About, // 关于我们
+	Pay, // 土豪赞助
 	Feedback, // 意见反馈
 	Login, // 登录
 	Register; // 注册

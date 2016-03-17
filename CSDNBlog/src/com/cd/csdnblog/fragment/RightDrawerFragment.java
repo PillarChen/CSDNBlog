@@ -32,6 +32,7 @@ public class RightDrawerFragment extends BaseFragmentAttach implements OnClickLi
 	private TextView myBlog;
 	private TextView update;
 	private TextView about;
+	private TextView pay;
 	private TextView feedback;
 	private TextView loginName;
 	private TextView blobManager;
@@ -43,6 +44,7 @@ public class RightDrawerFragment extends BaseFragmentAttach implements OnClickLi
 	private LinearLayout drawer_update;
 	private LinearLayout drawer_downloaded_manager;
 	private LinearLayout drawer_about;
+	private LinearLayout drawer_pay;
 	private LinearLayout drawer_feedback;
 	private View view;
 	private ImageView headimgView;
@@ -115,6 +117,13 @@ public class RightDrawerFragment extends BaseFragmentAttach implements OnClickLi
 //			drawer_about.setBackgroundColor(Color.WHITE);
 			
 			break;
+		case R.id.drawer_pay:
+			mActivity.changeFragment(DrawerTag.Pay);
+//			changeDrawerTitleColor();
+//			about.setTextColor(getResources().getColor(R.color.black));
+//			drawer_about.setBackgroundColor(Color.WHITE);
+			
+			break;
 		case R.id.drawer_feedback:
 			mActivity.changeFragment(DrawerTag.Feedback);
 //			changeDrawerTitleColor();
@@ -160,6 +169,7 @@ public class RightDrawerFragment extends BaseFragmentAttach implements OnClickLi
 		myBlog.setTextColor(getResources().getColor(R.color.banner_color));
 		update.setTextColor(getResources().getColor(R.color.banner_color));
 		about.setTextColor(getResources().getColor(R.color.banner_color));
+		pay.setTextColor(getResources().getColor(R.color.banner_color));
 		feedback.setTextColor(getResources().getColor(R.color.banner_color));
 		clearcache.setTextColor(getResources().getColor(R.color.banner_color));
 		blobManager.setTextColor(getResources().getColor(R.color.banner_color));
@@ -170,6 +180,7 @@ public class RightDrawerFragment extends BaseFragmentAttach implements OnClickLi
 		myBlog = (TextView) view.findViewById(R.id.myBlog_frag_right_drawer);
 		update = (TextView) view.findViewById(R.id.update_frag_right_drawer);
 		about = (TextView) view.findViewById(R.id.about_frag_right_drawer);
+		pay = (TextView) view.findViewById(R.id.pay_frag_right_drawer);
 		feedback = (TextView) view.findViewById(R.id.feedback_frag_right_drawer);
 		loginName= (TextView) view.findViewById(R.id.loginName_frag_right_drawer);
 		blobManager= (TextView) view.findViewById(R.id.blob_managerTitle);
@@ -181,6 +192,7 @@ public class RightDrawerFragment extends BaseFragmentAttach implements OnClickLi
 		drawer_update=(LinearLayout)view.findViewById(R.id.drawer_update);
 		drawer_downloaded_manager=(LinearLayout)view.findViewById(R.id.drawer_blob_manager);
 		drawer_about=(LinearLayout)view.findViewById(R.id.drawer_about);
+		drawer_pay=(LinearLayout)view.findViewById(R.id.drawer_pay);
 		drawer_feedback=(LinearLayout)view.findViewById(R.id.drawer_feedback);
 		
 		clearcache = (TextView) view.findViewById(R.id.clearcache_frag_right_drawer);
@@ -193,6 +205,7 @@ public class RightDrawerFragment extends BaseFragmentAttach implements OnClickLi
 		drawer_update.setOnClickListener(this);
 		drawer_downloaded_manager.setOnClickListener(this);
 		drawer_about.setOnClickListener(this);
+		drawer_pay.setOnClickListener(this);
 		drawer_feedback.setOnClickListener(this);
 		view.findViewById(R.id.drawer_account).setOnClickListener(this);
 		

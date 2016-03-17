@@ -85,8 +85,8 @@
 
         <LinearLayout
             android:id="@+id/drawer_update"
-            android:visibility="gone"
-            style="@style/right_menu_layout" >
+            style="@style/right_menu_layout"
+            android:visibility="gone" >
 
             <View
                 android:layout_width="@dimen/menu_small_icon_size"
@@ -112,6 +112,21 @@
                 android:id="@+id/about_frag_right_drawer"
                 style="@style/right_menu_text"
                 android:text="关于作者" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drawer_pay"
+            style="@style/right_menu_layout" >
+
+            <View
+                android:layout_width="@dimen/menu_small_icon_size"
+                android:layout_height="@dimen/menu_small_icon_size"
+                android:background="@drawable/drawer_pic_about" />
+
+            <TextView
+                android:id="@+id/pay_frag_right_drawer"
+                style="@style/right_menu_text"
+                android:text="土豪赞助" />
         </LinearLayout>
 
         <LinearLayout

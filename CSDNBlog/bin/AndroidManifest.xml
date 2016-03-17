@@ -29,7 +29,6 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
-    
 
     <application
         android:name="com.cd.csdnblog.MyAPP"
@@ -58,7 +57,20 @@
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.FeedBackActivity" />
         <activity android:name=".activity.WelcomeActivity" />
-        <!--多盟广告  -->
+        <activity android:name=".activity.PayActivity" />
+        <!--Bmob支付  -->
+        <activity
+            android:name="c.b.a.A"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="c.b.a.B"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- 多盟广告 -->
         <activity
             android:name="cn.domob.android.ads.DomobActivity"
             android:theme="@android:style/Theme.Translucent" >

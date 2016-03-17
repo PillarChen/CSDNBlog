@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/banner_msg" />
+
+    <EditText
+        android:id="@+id/contactView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_view"
+        android:gravity="left"
+        android:hint="请输入您的CSDN用户名(非必填)"
+        android:padding="10dp"
+        android:textColorHint="@color/hint_edittext" />
+
+    <EditText
+        android:id="@+id/moneyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_view"
+        android:gravity="left"
+        android:hint="赞助金额(0.00元)"
+        android:padding="10dp"
+        android:textColorHint="@color/hint_edittext" />
+
+    <EditText
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_view"
+        android:gravity="left"
+        android:hint="赞助描述（填写CSDN用户名赞助后可推荐博客）"
+        android:padding="10dp"
+        android:textColorHint="@color/hint_edittext" />
+
+    <RadioGroup
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/alipay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="支付宝" />
+
+        <RadioButton
+            android:id="@+id/wxpay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="微信" />
+
+        <RadioButton
+            android:id="@+id/query"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查询"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/payBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_login_btn"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/btn_pay"
+        android:textColor="@color/btn_text_color"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/hint_pay_info"
+        android:textColor="@color/hint_edittext"
+        android:textSize="@dimen/text_size_10" />
+
+</LinearLayout>
