@@ -1,19 +1,8 @@
 package com.cd.csdnblog.fragment;
 
-import java.io.BufferedInputStream;
-import java.io.InputStream;
-import java.net.URL;
-import java.net.URLConnection;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.apache.http.util.ByteArrayBuffer;
-import org.apache.http.util.EncodingUtils;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import com.cd.csdnblog.MyAPP;
 import com.cd.csdnblog.R;
 import com.cd.csdnblog.activity.DetailActivity;
@@ -305,6 +294,7 @@ public class NoteListFragment extends BaseFragmentAttach implements OnItemClickL
 				break;
 			case Constants.DEF_RESULT_CODE.REFRESH: // 刷新
 				swipeRl.setRefreshing(false);
+				page.setPageStart();
 //				blogListView.stopRefresh(getDate());
 //				
 //				db.delete(blogType);
