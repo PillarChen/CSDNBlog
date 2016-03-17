@@ -7,7 +7,7 @@ import com.cd.csdnblog.MyAPP;
 import com.cd.csdnblog.R;
 import com.cd.csdnblog.adapter.BlobUserNameAdapter;
 import com.cd.csdnblog.base.BaseActivity;
-import com.cd.csdnblog.bean.MyBlogBean;
+import com.cd.csdnblog.bean.Blog;
 import com.cd.csdnblog.bean.Feedback;
 import com.cd.csdnblog.bean.MyUser;
 

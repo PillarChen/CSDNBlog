@@ -6,7 +6,7 @@ import com.cd.csdnblog.MyAPP;
 import com.cd.csdnblog.R;
 import com.cd.csdnblog.adapter.BlobUserNameAdapter;
 import com.cd.csdnblog.base.BaseActivity;
-import com.cd.csdnblog.bean.MyBlogBean;
+import com.cd.csdnblog.bean.Blog;
 import com.cd.csdnblog.bean.MyUser;
 import com.cd.csdnblog.fragment.HomeFragment;
 import com.cd.csdnblog.utils.DialogTool;
@@ -109,7 +109,7 @@ public class ManagerActivity extends BaseActivity implements OnClickListener{
 		if(user==null){
 			return;
 		}
-		final BmobQuery<MyBlogBean> bmobQuery= new BmobQuery<MyBlogBean>();
+		final BmobQuery<Blog> bmobQuery= new BmobQuery<Blog>();
 		bmobQuery.order("createdAt");
 		
 		bmobQuery.addWhereEqualTo("author", user);
@@ -122,10 +122,10 @@ public class ManagerActivity extends BaseActivity implements OnClickListener{
 //				bmobQuery.setCachePolicy(CachePolicy.NETWORK_ELSE_CACHE);	// 如果没有缓存的话，则先从网络中取
 //			}
 //		}
-		bmobQuery.findObjects(mContext, new FindListener<MyBlogBean>() {
+		bmobQuery.findObjects(mContext, new FindListener<Blog>() {
 			
 			@Override
-			public void onSuccess(List<MyBlogBean> object) {
+			public void onSuccess(List<Blog> object) {
 				// TODO Auto-generated method stub
 //				MyAPP.toast(mContext.getApplicationContext(),"查询成功：共"+object.size()+"条数据。");
 				MyAPP.mMyBlogData=object;
@@ -310,12 +310,12 @@ public class ManagerActivity extends BaseActivity implements OnClickListener{
 	 * 删除博客
 	 */
 	private void delBlogUser() {
-		final List<MyBlogBean> myBlogTemp=MyAPP.mMyBlogData;
+		final List<Blog> myBlogTemp=MyAPP.mMyBlogData;
 		delBlogList.clear();
 		for(int i=0;i<MyAPP.mMyBlogData.size();i++){
 			
 			if(delList.contains(MyAPP.mMyBlogData.get(i).getObjectId())){
-				final MyBlogBean blog=new MyBlogBean();
+				final Blog blog=new Blog();
 				Log.i("del",MyAPP.mMyBlogData.get(i).getBlogUserName());
 				blog.setObjectId(MyAPP.mMyBlogData.get(i).getObjectId());
 				delBlogList.add(blog);
@@ -357,7 +357,7 @@ public class ManagerActivity extends BaseActivity implements OnClickListener{
 			return;
 		}
 		MyUser user=BmobUser.getCurrentUser(this, MyUser.class);
-		final MyBlogBean blogBean=new MyBlogBean();
+		final Blog blogBean=new Blog();
 		blogBean.setBlogUserName(blogUserView.getText().toString());
 		blogBean.setAuthor(user);
 		blogBean.save(this, new SaveListener() {

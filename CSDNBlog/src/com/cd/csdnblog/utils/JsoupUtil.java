@@ -13,7 +13,7 @@ import org.jsoup.select.Elements;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.cd.csdnblog.bean.Blog;
+import com.cd.csdnblog.bean.BlogBean;
 import com.cd.csdnblog.bean.BlogItem;
 import com.cd.csdnblog.bean.Blogger;
 import com.cd.csdnblog.bean.Comment;
@@ -102,8 +102,8 @@ public class JsoupUtil {
 	 * @param str
 	 * @return
 	 */
-	public static List<Blog> getContent(String url, String str) {
-		List<Blog> list = new ArrayList<Blog>();
+	public static List<BlogBean> getContent(String url, String str) {
+		List<BlogBean> list = new ArrayList<BlogBean>();
 
 		// 获取文档内容
 		Document doc = Jsoup.parse(str);
@@ -114,7 +114,7 @@ public class JsoupUtil {
 
 		// 获取标题
 		Element title = detail.getElementsByClass("article_title").get(0);
-		Blog blogTitle = new Blog();
+		BlogBean blogTitle = new BlogBean();
 		blogTitle.setState(Constants.DEF_BLOG_ITEM_TYPE.TITLE); // 设置状态
 		blogTitle.setContent(ToDBC(title.text())); // 设置标题内容
 
@@ -173,7 +173,7 @@ public class JsoupUtil {
 				System.out.println("img");
 				for (Element img : imgs) {
 					if (!img.attr("src").equals("")) {
-						Blog blogImgs = new Blog();
+						BlogBean blogImgs = new BlogBean();
 						// 大图链接
 						if (!img.parent().attr("href").equals("")) {
 							blogImgs.setImgLink(img.parent().attr("href"));
@@ -195,7 +195,7 @@ public class JsoupUtil {
 			c.select("img").remove();
 
 			// 获取博客内容
-			Blog blogContent = new Blog();
+			BlogBean blogContent = new BlogBean();
 			blogContent.setState(Constants.DEF_BLOG_ITEM_TYPE.CONTENT);
 
 			if (c.text().equals("")) {

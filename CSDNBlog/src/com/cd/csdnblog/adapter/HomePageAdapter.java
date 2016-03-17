@@ -2,7 +2,7 @@ package com.cd.csdnblog.adapter;
 
 import java.util.List;
 
-import com.cd.csdnblog.bean.MyBlogBean;
+import com.cd.csdnblog.bean.Blog;
 import com.cd.csdnblog.bean.Blog_Recommend;
 
 import android.support.v4.app.Fragment;

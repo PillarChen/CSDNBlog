@@ -15,7 +15,7 @@ import com.cd.csdnblog.R;
 import com.cd.csdnblog.activity.MainActivity;
 import com.cd.csdnblog.adapter.MyViewPagerAdapter;
 import com.cd.csdnblog.base.BaseFragmentAttach;
-import com.cd.csdnblog.bean.MyBlogBean;
+import com.cd.csdnblog.bean.Blog;
 import com.cd.csdnblog.bean.HomeItemBean;
 import com.cd.csdnblog.bean.MyUser;
 import com.cd.csdnblog.constant.Url;
@@ -105,26 +105,26 @@ public class MyBlogFragment extends BaseFragmentAttach implements OnClickListene
 		if(user==null){
 			return;
 		}
-		final BmobQuery<MyBlogBean> bmobQuery= new BmobQuery<MyBlogBean>();
+		final BmobQuery<Blog> bmobQuery= new BmobQuery<Blog>();
 		bmobQuery.order("createdAt");
 		
 		bmobQuery.addWhereEqualTo("author", user);
 		
 		//先判断是否有缓存
-		boolean isCacheMyBlog = bmobQuery.hasCachedResult(mActivity,MyBlogBean.class);
+		boolean isCacheMyBlog = bmobQuery.hasCachedResult(mActivity,Blog.class);
 		if(isCacheMyBlog){
 			bmobQuery.setCachePolicy(CachePolicy.CACHE_ELSE_NETWORK);	// 先从缓存取数据，如果没有的话，再从网络取。
 		}else{
 			bmobQuery.setCachePolicy(CachePolicy.NETWORK_ELSE_CACHE);	// 如果没有缓存的话，则先从网络中取
 		}
-		bmobQuery.findObjects(mActivity, new FindListener<MyBlogBean>() {
+		bmobQuery.findObjects(mActivity, new FindListener<Blog>() {
 			
 			@Override
-			public void onSuccess(List<MyBlogBean> object) {
+			public void onSuccess(List<Blog> object) {
 				// TODO Auto-generated method stub
 				MyAPP.toast(mActivity,"查询成功：共"+object.size()+"条数据。");
 				MyAPP.mMyBlogData=object;
-				for (MyBlogBean blog : object) {
+				for (Blog blog : object) {
 					Log.d(TAG, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ");
 					Log.d(TAG, "ObjectId = "+blog.getObjectId());
 					Log.d(TAG, "Name = "+blog.getBlogUserName());

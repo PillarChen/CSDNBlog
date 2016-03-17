@@ -7,7 +7,7 @@ import cn.domob.android.ads.InterstitialAd;
 import cn.domob.android.ads.InterstitialAdListener;
 import cn.domob.android.ads.AdManager.ErrorCode;
 
-import com.cd.csdnblog.bean.MyBlogBean;
+import com.cd.csdnblog.bean.Blog;
 import com.cd.csdnblog.bean.Blog_Recommend;
 import com.cd.csdnblog.utils.SharePreferencesUtil;
 import android.app.Application;
@@ -26,7 +26,7 @@ public class MyAPP extends Application {
 	public static String username = "";
 	public static String password = "";
 	private static long mLastClickTime;//防止连续快速点击
-	public static List<MyBlogBean> mMyBlogData=new ArrayList<MyBlogBean>();
+	public static List<Blog> mMyBlogData=new ArrayList<Blog>();
 	public static List<Blog_Recommend> mRecommendData=new ArrayList<Blog_Recommend>();
 	public static List<String> blogUserNameList;
 	
