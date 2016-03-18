@@ -2,16 +2,14 @@
 *.bkp
 *.swp
 *.class
+*.project
 
 bin/
 gen/
 
 *.classpath
 
-
 .settings/
-proguard/
-/obj
 
 
-/project.properties
+project.properties
