@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\topsage\workspace\APPDATABASE\CSDNBlog_AS\library_indicator\assets"/></dataSet><dataSet config="release"><source path="C:\Users\topsage\workspace\APPDATABASE\CSDNBlog_AS\library_indicator\build-types\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="F:\MyAppDatabase\CSDNBlog_AS\library_indicator\assets"/></dataSet><dataSet config="release"><source path="F:\MyAppDatabase\CSDNBlog_AS\library_indicator\build-types\release\assets"/></dataSet></merger>

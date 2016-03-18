@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\MyAppDatabase\\CSDNBlog_AS\\library_indicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\vpi__tab_indicator.xml",
+        "source": "F:\\MyAppDatabase\\CSDNBlog_AS\\library_indicator\\build\\intermediates\\bundles\\debug\\res\\drawable\\vpi__tab_indicator.xml"
+    },
+    {
         "merged": "C:\\Users\\topsage\\workspace\\APPDATABASE\\CSDNBlog_AS\\library_indicator\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\vpi__tab_indicator.xml",
         "source": "C:\\Users\\topsage\\workspace\\APPDATABASE\\CSDNBlog_AS\\library_indicator\\build\\intermediates\\bundles\\debug\\res\\drawable\\vpi__tab_indicator.xml"
     }

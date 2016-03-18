@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\MyAppDatabase\\CSDNBlog_AS\\library_share_youmeng\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\shake_sound.mp3",
+        "source": "F:\\MyAppDatabase\\CSDNBlog_AS\\library_share_youmeng\\build\\intermediates\\bundles\\debug\\res\\raw\\shake_sound.mp3"
+    },
+    {
         "merged": "C:\\Users\\topsage\\workspace\\APPDATABASE\\CSDNBlog_AS\\library_share_youmeng\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\shake_sound.mp3",
         "source": "C:\\Users\\topsage\\workspace\\APPDATABASE\\CSDNBlog_AS\\library_share_youmeng\\build\\intermediates\\bundles\\debug\\res\\raw\\shake_sound.mp3"
     }
