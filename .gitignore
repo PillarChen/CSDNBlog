@@ -1,0 +1,17 @@
+*.bak
+*.bkp
+*.swp
+*.class
+
+bin/
+gen/
+
+*.classpath
+
+
+.settings/
+proguard/
+/obj
+
+
+/project.properties
