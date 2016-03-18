@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CSDNBlog</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 注册 -->
+    <string name="username">用户名：</string>
+    <string name="email">邮箱：</string>
+    <string name="phone">手机：</string>
+    <string name="password">密        码：</string>
+    <string name="rePassword">重复输入密码：</string>
+    <string name="age">年龄：</string>
+    <string name="login">登  录</string>
+    <string name="register">注   册</string>
+    <string name="reWrite_password">重置密码</string>
+    <string name="setup_password_title">设置密码</string>
+    <string name="send_text">提交</string>
+    <string name="feedback_text">意见反馈</string>
+    
+    <string name="hint_unlogin">请登录后操作</string>
+    
+    <string name="checkbox_hint">阅读并同意《Account协议》</string>
+    
+    <!-- 登录 -->
+    <string name="find_password">找回密码</string>
+    <string name="txt_login">登录</string>
+    <string name="txt_unlogin">未登录</string>
+    <string name="txt_add">博客管理</string>
+    <string name="txt_home">推荐博客</string>
+    <string name="txt_myBlog">我的博客</string>
+    <string name="default_username">未登录</string>
+    
+    <string name="version_android">Android版本：</string>
+    <string name="txt_about">关于作者</string>
+    
+    <string name="source_init_str">----分类----</string>
+    
+    <string name="about_txt">CSDNBlog是针对CSDN博客开发的APP,可以自己定制添加CSDN博客到我的博客中......</string>
+</resources>

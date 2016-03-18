@@ -1,0 +1,1 @@
+include ':app', ':library_indicator', ':library_share_youmeng'
